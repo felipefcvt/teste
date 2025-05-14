@@ -108,3 +108,43 @@ O frontend estará disponível em: [http://localhost:3001](http://localhost:3001
 - [Next.js (App Router)](https://nextjs.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [React Hot Toast](https://react-hot-toast.com/)
+
+---
+
+## 🧪 Testes automatizados (Backend)
+
+O backend utiliza o **Jest** para testes unitários dos serviços e controllers.
+
+### ▶️ Executar todos os testes:
+
+```bash
+cd backend
+npm run test
+```
+
+### ▶️ Testes em modo watch:
+
+```bash
+npm run test:watch
+```
+
+### ▶️ Testes com cobertura:
+
+```bash
+npm run test:cov
+```
+
+Os testes estão localizados dentro da pasta:
+
+```
+backend/src/
+├── tasks/
+│   ├── tasks.service.spec.ts
+│   └── tasks.controller.spec.ts
+```
+
+Esses testes cobrem:
+
+- Regras de negócio da criação, edição e remoção de tarefas
+- Validação de título duplicado
+- Verificação de tarefas inexistentes
